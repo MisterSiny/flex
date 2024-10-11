@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        /* demo1 */
+        .contener>div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+        }
+        .contener{
+            height: 500px;
+            background-color: grey;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-evenly;
+        }
+        /* demo2 */
+        .contener2>div{
+            width: 30%;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+        }
+        .contener2{
+            height: 500px;
+            background-color: grey;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        /* demo3 */
+        .contener3>div{
+            width: 20%;
+            height: 100px;
+            background-color: rgb(0, 161, 46);
+            margin: 10px;
+        }
+        .contener3{
+            height: 500px;
+            background-color: grey;
+            display: flex;
+        }
+        #demo1{
+            flex-grow: 1;
+        }
+        /* demo4 */
+        .contener4>div{
+            width: 20%;
+            height: 100px;
+            background-color: rgb(161, 86, 0);
+            margin: 10px;
+        }
+        .contener4{
+            height: 500px;
+            background-color: grey;
+            display: flex;
+            flex-direction:column-reverse;
+        }
+        /* demo5 */
+        .contener5>div{
+            width: 150px;
+            height: 100px;
+            background-color: rgb(0, 102, 161);
+            margin: 10px;
+        }
+        .contener5{
+            height: 500px;
+            background-color: grey;
+            display: flex;
+            justify-content:space-evenly;
+        }
+        #demo2{
+            align-self: flex-end;
+            order: -1;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 35px;">demo1</h1>
+    <div class="contener">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <h2 style="font-size: 35px;">demo2</h2>
+    <div class="contener2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <br>
+    <h2 style="font-size: 35px;">demo3</h2>
+    <div class="contener3">
+        <div id="demo1"></div>
+        <div></div>
+        <div></div>
+    </div>
+    <h2 style="font-size: 35px;">demo4</h2>
+    <div class="contener4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <br>
+    <h2 style="font-size: 35px;">demo5</h2>
+    <div class="contener5">
+        <div id="test">1</div>
+        <div>2</div>
+        <div id="demo2">3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <br>
+
+
+</body>
+</html>
